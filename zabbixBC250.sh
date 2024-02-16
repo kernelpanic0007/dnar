@@ -59,7 +59,8 @@ if ! [ -d /var/log/zabbix/ ]; then
 fi
 
 #add customminer to rc.local for auto startup
-sed -i -e '$i \/home/user/customminer.sh\n' /etc/rc.local
+#for Ubuntu 20.04 create customminer.sh as service
+#sed -i -e '$i \/home/user/customminer.sh\n' /etc/rc.local
  
 #restart zabbix agent
 
